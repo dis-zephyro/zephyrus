@@ -1,13 +1,15 @@
+$color-blue             :   #4a83c4;
+
 
 $body-bg                :   #fff !default;
 $text-color             :   #222 !default;
-$link-color             :   #0d80e6 !default;
+$link-color             :   $color-blue;
 $link-hover-decoration  :   underline;
 
 
 $font-size-base         :   14px !default;
 $line-height-base       :   1.428571429 !default;
-$font-family-base       :   "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-base       :   $font-base;
 
 
 
@@ -15,17 +17,17 @@ $font-family-base       :   "Helvetica Neue", Helvetica, Arial, sans-serif !defa
 //== Media queries breakpoints
 
 // Extra small screen / phone
-$screen-xs-min:              80px !default;
+$screen-xs-min:              480px !default;
 
 // Small screen / tablet
 $screen-sm-min:              768px !default;
 
 // Medium screen / desktop
-$screen-md-min:              992px !default;
+$screen-md-min:              1024px !default;
 
 // Large screen / wide desktop
 
-$screen-lg-min:              1170px !default;
+$screen-lg-min:              1200px !default;
 
 
 // So media queries don't overlap when required, provide a maximum
@@ -59,11 +61,11 @@ $container-tablet:             (720px + $grid-gutter-width) !default;
 $container-sm:                 $container-tablet !default;
 
 // Medium screen / desktop
-$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-desktop:            (970px + $grid-gutter-width) !default;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop !default;
 
 // Large screen / wide desktop
-$container-large-desktop:      (1100px + $grid-gutter-width) !default;
+$container-large-desktop:      (1150px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;

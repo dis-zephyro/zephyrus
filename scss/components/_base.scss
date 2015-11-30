@@ -34,6 +34,14 @@ textarea {
 	line-height: inherit;
 }
 
+body {
+	position: relative;
+}
+
+.container {
+	position: relative;
+	@include clearfix();
+}
 
 // Links
 
@@ -44,7 +52,6 @@ a {
 	&:hover,
 	&:focus {
 		outline: none;
-		color: $link-color;
 		text-decoration: $link-hover-decoration;
 	}
 
@@ -59,6 +66,15 @@ h1, h2, h3, h4 {
 	font-weight: 400;
 }
 
+h2 {
+	text-align: center;
+	color: #000;
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+}
+
 p {
 	padding: 0;
 	margin: 0 0 10px 0;
@@ -68,4 +84,9 @@ ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+
+.pb30 {
+	padding-bottom: 30px;
 }

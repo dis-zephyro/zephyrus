@@ -1,0 +1,183 @@
+.header {
+	z-index: 999;
+	background: #fff;
+	position: relative;
+	padding: 5px 0 10px 0;
+	border-top: 5px solid $color-blue;
+	@include box-shadow(0 0 6px rgba(68,91,113,.47));
+
+	
+	.header-logo {
+		float: left;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: 40px;
+		color: $color-blue;
+	}
+
+	@media (min-width: $screen-sm-min) {
+
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 70px;
+		position: fixed;
+		padding: 10px 0 15px 0;
+	}
+}
+
+.jumbotron {
+	color: #fff;
+	padding: 50px 0;
+	background: $color-blue;
+
+	.jumbotron-row {
+		width: 100%;
+	}
+
+
+	.jumbotron-image {
+		width: 120px;
+		padding: 0 10px;
+		display: block;
+		margin: 0 auto 20px auto;
+		vertical-align: middle;
+	}
+
+	.jumbotron-text {
+		width: 100%;
+		padding: 0 10px;
+		text-align: center;
+		vertical-align: middle;
+
+		ul {
+			margin: 0;
+			list-style: none;
+			padding: 30px 0;
+
+			li {
+				margin-bottom: 6px;
+			}
+		}
+	}
+
+	.jumbotron-header {
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 36px;
+		margin-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 3px 0 3px rgba(0, 0, 0, 0.1), 2px 0 2px rgba(0, 0, 0, 0.1), 1px 0 1px rgba(0, 0, 0, 0.1);
+
+		&.medium {
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+
+	.jumbotron-title {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 24px;
+		text-transform: uppercase;
+
+		strong {
+			font-weight: 600;
+		}
+	}
+
+	.jumbotron-price {
+		width: 160px;
+		height: 50px;
+		color: $color-blue;
+		background: #fff;
+		font-size: 18px;
+		line-height: 50px;
+		font-weight: 300;
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+
+		span {
+			font-size: 40px;
+
+		}
+
+	}
+
+	@media (min-width: $screen-sm-min) {
+		padding: 70px 0;
+
+		&.jumbotron-top {
+			margin-top: 70px;
+		}
+
+		.jumbotron-row {
+			width: 100%;
+			display: table;
+		}
+
+		.jumbotron-image {
+			width: 30%;
+			margin: 0;
+			display: table-cell;
+		}
+
+		.jumbotron-text {
+			width: 70%;
+			padding-left: 50px;
+			display: table-cell;
+			padding-bottom: 20px;
+		}
+
+		.jumbotron-header {
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 50px;
+			margin-bottom: 10px;
+
+			&.medium {
+				font-size: 30px;
+				line-height: 40px;
+			}
+		}
+
+		.jumbotron-title {
+			font-size: 20px;
+			line-height: 28px;
+		}
+	}
+
+	@media (min-width: $screen-md-min) {
+
+		.jumbotron-text {
+			width: 70%;
+			padding-left: 100px;
+			padding-bottom: 50px;
+		}
+
+		.jumbotron-header {
+			font-size: 48px;
+			font-weight: 700;
+			line-height: 60px;
+
+			&.medium {
+				font-size: 36px;
+				line-height: 60px;
+			}
+		}
+
+		.jumbotron-title {
+			font-size: 22px;
+			line-height: 30px;
+		}
+	}
+
+}
+
+
+
+
+@media (min-width: $screen-lg-min) {
+}
